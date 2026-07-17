@@ -1,0 +1,68 @@
+[gd_scene format=3 uid="uid://hl7euv7pr3gu"]
+
+[ext_resource type="Script" uid="uid://dfx1chqitkdd6" path="res://title_screen.gd" id="1_ak2if"]
+[ext_resource type="Texture2D" uid="uid://d2mee8r0qgeeb" path="res://delete_this_its_just_for_the_project.png" id="2_ak2if"]
+
+[sub_resource type="SystemFont" id="SystemFont_lguw5"]
+
+[sub_resource type="GDScript" id="GDScript_ig5kc"]
+script/source = "extends Button
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Title Screen" type="Node2D" unique_id=1065659007]
+script = ExtResource("1_ak2if")
+
+[node name="Background" type="TextureRect" parent="." unique_id=2120072239]
+offset_right = 4114.285
+offset_bottom = 2314.2886
+scale = Vector2(0.28000003, 0.27999967)
+texture = ExtResource("2_ak2if")
+
+[node name="Title" type="RichTextLabel" parent="." unique_id=159361648]
+clip_contents = false
+offset_left = 326.0
+offset_top = 170.0
+offset_right = 838.0
+offset_bottom = 326.0
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = SubResource("SystemFont_lguw5")
+theme_override_font_sizes/normal_font_size = 90
+text = "JudahGame"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=192664469]
+offset_left = 489.0
+offset_top = 296.0
+offset_right = 664.0
+offset_bottom = 522.0
+theme_override_constants/separation = 12
+
+[node name="Start" type="Button" parent="VBoxContainer" unique_id=1149737597]
+layout_mode = 2
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 26
+text = "start game"
+script = SubResource("GDScript_ig5kc")
+
+[node name="Settings" type="Button" parent="VBoxContainer" unique_id=1215370059]
+layout_mode = 2
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 26
+text = "settings"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=1671782258]
+layout_mode = 2
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 26
+text = "quit :("
+
+[connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]
