@@ -1,3 +1,57 @@
 [gd_scene format=3 uid="uid://nbnrgfir8614"]
 
+[ext_resource type="Script" uid="uid://bjjtn3attdr6m" path="res://timer_screen.gd" id="1_3mivm"]
+[ext_resource type="Texture2D" uid="uid://5ynkbe5dy3yr" path="res://level_scene_background.jpeg" id="1_4quuv"]
+[ext_resource type="Texture2D" uid="uid://uiyvjvrgxrmi" path="res://icon.svg" id="2_187gu"]
+
 [node name="Node2D" type="Node2D" unique_id=330050346]
+script = ExtResource("1_3mivm")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=499256093]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_4quuv")
+
+[node name="LifeContainer" type="HBoxContainer" parent="." unique_id=60071287]
+offset_left = 250.0
+offset_top = 97.0
+offset_right = 906.0
+offset_bottom = 225.0
+
+[node name="Life1" type="TextureRect" parent="LifeContainer" unique_id=825601013]
+layout_mode = 2
+texture = ExtResource("2_187gu")
+
+[node name="Life2" type="TextureRect" parent="LifeContainer" unique_id=1736563951]
+layout_mode = 2
+texture = ExtResource("2_187gu")
+
+[node name="Life3" type="TextureRect" parent="LifeContainer" unique_id=2031853716]
+layout_mode = 2
+texture = ExtResource("2_187gu")
+
+[node name="Life4" type="TextureRect" parent="LifeContainer" unique_id=1413277681]
+layout_mode = 2
+texture = ExtResource("2_187gu")
+
+[node name="Life5" type="TextureRect" parent="LifeContainer" unique_id=1171929644]
+layout_mode = 2
+texture = ExtResource("2_187gu")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=2143238969]
+offset_left = 505.0
+offset_top = 354.0
+offset_right = 665.0
+offset_bottom = 417.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 44
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=90680050]
+offset_left = 545.0
+offset_top = 508.0
+offset_right = 615.0
+offset_bottom = 569.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 44
+text = "0.0"
