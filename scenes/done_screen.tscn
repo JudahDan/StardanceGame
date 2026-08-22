@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bl0y6ucbrjerx"]
+
+[ext_resource type="Texture2D" uid="uid://bgk6y2j44gxmb" path="res://done_screen_bckgrnd.png" id="1_k66lo"]
+[ext_resource type="Texture2D" uid="uid://2uh6u4k43hp7" path="res://garlic_collectible.png" id="2_c2erd"]
+[ext_resource type="Texture2D" uid="uid://cbllehcx6ngji" path="res://Poko-1.png" id="3_t6dg5"]
+
+[node name="Done Screen" type="Node2D" unique_id=1388214378]
+
+[node name="Background" type="TextureRect" parent="." unique_id=1750110988]
+offset_right = 1920.0005
+offset_bottom = 1080.0005
+scale = Vector2(0.59999985, 0.5999998)
+texture = ExtResource("1_k66lo")
+
+[node name="Garlic" type="TextureRect" parent="." unique_id=1600183440]
+offset_left = 452.0
+offset_top = 322.00003
+offset_right = 1476.0
+offset_bottom = 1346.0
+scale = Vector2(0.24, 0.24)
+texture = ExtResource("2_c2erd")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=711738534]
+offset_left = 474.0
+offset_top = 214.0
+offset_right = 506.0
+offset_bottom = 254.0
+texture = ExtResource("3_t6dg5")

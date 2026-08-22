@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://nbnrgfir8614"]
 
-[ext_resource type="Script" uid="uid://bjjtn3attdr6m" path="res://timer_screen.gd" id="1_3mivm"]
-[ext_resource type="Texture2D" uid="uid://5ynkbe5dy3yr" path="res://level_scene_background.jpeg" id="1_4quuv"]
-[ext_resource type="Texture2D" uid="uid://uiyvjvrgxrmi" path="res://icon.svg" id="2_187gu"]
+[ext_resource type="Script" uid="uid://bxoxj74kw20xm" path="res://scripts/timer_screen.gd" id="1_xna03"]
+[ext_resource type="Texture2D" uid="uid://5ynkbe5dy3yr" path="res://level_scene_background.jpeg" id="2_0bi17"]
+[ext_resource type="Texture2D" uid="uid://uiyvjvrgxrmi" path="res://icon.svg" id="3_bseyb"]
 
-[node name="Node2D" type="Node2D" unique_id=330050346]
-script = ExtResource("1_3mivm")
+[node name="Timer Screen" type="Node2D" unique_id=330050346]
+script = ExtResource("1_xna03")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=499256093]
 offset_right = 1152.0
 offset_bottom = 648.0
-texture = ExtResource("1_4quuv")
+texture = ExtResource("2_0bi17")
 
 [node name="LifeContainer" type="HBoxContainer" parent="." unique_id=60071287]
 offset_left = 250.0
@@ -20,23 +20,23 @@ offset_bottom = 225.0
 
 [node name="Life1" type="TextureRect" parent="LifeContainer" unique_id=825601013]
 layout_mode = 2
-texture = ExtResource("2_187gu")
+texture = ExtResource("3_bseyb")
 
 [node name="Life2" type="TextureRect" parent="LifeContainer" unique_id=1736563951]
 layout_mode = 2
-texture = ExtResource("2_187gu")
+texture = ExtResource("3_bseyb")
 
 [node name="Life3" type="TextureRect" parent="LifeContainer" unique_id=2031853716]
 layout_mode = 2
-texture = ExtResource("2_187gu")
+texture = ExtResource("3_bseyb")
 
 [node name="Life4" type="TextureRect" parent="LifeContainer" unique_id=1413277681]
 layout_mode = 2
-texture = ExtResource("2_187gu")
+texture = ExtResource("3_bseyb")
 
 [node name="Life5" type="TextureRect" parent="LifeContainer" unique_id=1171929644]
 layout_mode = 2
-texture = ExtResource("2_187gu")
+texture = ExtResource("3_bseyb")
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=2143238969]
 offset_left = 505.0

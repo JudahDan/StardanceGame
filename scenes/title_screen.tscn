@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://hl7euv7pr3gu"]
 
-[ext_resource type="Script" uid="uid://dfx1chqitkdd6" path="res://title_screen.gd" id="1_ak2if"]
-[ext_resource type="Texture2D" uid="uid://ch5tadoxgacfi" path="res://title_screen_background.png" id="2_ak2if"]
+[ext_resource type="Script" uid="uid://b3bof2xwumlml" path="res://scripts/title_screen.gd" id="1_sa3yf"]
+[ext_resource type="Texture2D" uid="uid://ch5tadoxgacfi" path="res://title_screen_background.png" id="2_s4lrb"]
 
 [sub_resource type="SystemFont" id="SystemFont_lguw5"]
 
@@ -20,13 +20,13 @@ func _process(delta: float) -> void:
 "
 
 [node name="Title Screen" type="Node2D" unique_id=1065659007]
-script = ExtResource("1_ak2if")
+script = ExtResource("1_sa3yf")
 
 [node name="Background" type="TextureRect" parent="." unique_id=2120072239]
 offset_right = 4114.285
 offset_bottom = 2314.2886
 scale = Vector2(0.28000003, 0.27999967)
-texture = ExtResource("2_ak2if")
+texture = ExtResource("2_s4lrb")
 
 [node name="Title" type="RichTextLabel" parent="." unique_id=159361648]
 clip_contents = false
@@ -64,5 +64,19 @@ layout_mode = 2
 theme_override_constants/outline_size = 20
 theme_override_font_sizes/font_size = 26
 text = "quit :("
+
+[node name="Controls" type="RichTextLabel" parent="." unique_id=723544383]
+clip_contents = false
+offset_left = 424.0
+offset_top = 515.0
+offset_right = 724.0
+offset_bottom = 628.0
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 16
+bbcode_enabled = true
+text = "Controls: 
+arrows: left-right
+space: jump"
+horizontal_alignment = 1
 
 [connection signal="pressed" from="VBoxContainer/Start" to="." method="_on_start_pressed"]

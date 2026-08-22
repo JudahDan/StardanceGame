@@ -1,5 +1,3 @@
-#What does this even do? Should I rename this scene?
-
 extends Node2D
 @onready var timer: RichTextLabel = $timer #literally just the richlabeltext
 
