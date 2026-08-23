@@ -18,6 +18,6 @@ func _process(delta: float) -> void:
 			get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")
 	
 	if timer_end:
-		Global.lives -= 1
+		Global.lose_life()
 		Global.minigames_done -=1
 		get_tree().change_scene_to_file("res://scenes/timer_screen.tscn")

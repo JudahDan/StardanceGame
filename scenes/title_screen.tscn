@@ -53,12 +53,6 @@ theme_override_font_sizes/font_size = 26
 text = "start game"
 script = SubResource("GDScript_ig5kc")
 
-[node name="Settings" type="Button" parent="VBoxContainer" unique_id=1215370059]
-layout_mode = 2
-theme_override_constants/outline_size = 20
-theme_override_font_sizes/font_size = 26
-text = "settings"
-
 [node name="Quit" type="Button" parent="VBoxContainer" unique_id=1671782258]
 layout_mode = 2
 theme_override_constants/outline_size = 20
@@ -67,12 +61,12 @@ text = "quit :("
 
 [node name="Controls" type="RichTextLabel" parent="." unique_id=723544383]
 clip_contents = false
-offset_left = 424.0
-offset_top = 515.0
-offset_right = 724.0
-offset_bottom = 628.0
+offset_left = 422.0
+offset_top = 465.0
+offset_right = 722.0
+offset_bottom = 578.0
 theme_override_constants/outline_size = 10
-theme_override_font_sizes/normal_font_size = 16
+theme_override_font_sizes/normal_font_size = 26
 bbcode_enabled = true
 text = "Controls: 
 arrows: left-right
