@@ -2,3 +2,4 @@ This is a WarioWare-style game involving two minigames. The first is a platforme
 This project involved minimal generative AI use. AI, specifically ChatGPT, was used only to generate two in-game backgrounds and one sprite.
 This game was made for the Hack Club Stardance Challenge.
 Try it on the web browser at https://leijo17.itch.io/pokoware
+Controls: For Level 1, press the left/right arrow keys to move left/right; press the space key to jump. For Level 2, click on the garlic icons using the left mouse button.
